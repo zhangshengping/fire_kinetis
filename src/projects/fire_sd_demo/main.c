@@ -36,9 +36,6 @@ void main(void)
     f_printf(&fdst,"hello.Working");
     f_printf(&fdst,"succed\n¹þ¹þ");
     f_close(&fdst);
-  
-
-
 }
 
 
