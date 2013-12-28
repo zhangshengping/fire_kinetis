@@ -29,8 +29,6 @@ void main(void)
     FRESULT res;
    
     uint32 size, sizetmp;
-    char *str = "我是张盛平\n";
-    printf(str);
     f_mount(&fs,0,1);
     res = f_open(&fdst,"0:/data1.txt",FA_OPEN_ALWAYS|FA_WRITE);
     f_printf(&fdst,"hello.Working");
