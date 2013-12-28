@@ -40,8 +40,7 @@ void main(void)
     ;
     ;
     f_close(&fdst);
-    while(1)
-      printf("end\n");
+  
 
 
 }
