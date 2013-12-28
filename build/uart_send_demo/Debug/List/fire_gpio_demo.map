@@ -1,0 +1,355 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.60.1.5097/W32 for ARM               17/Nov/2013  15:27:43 #
+# Copyright 2007-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  H:\fire_Kinetis\build\uart_send_demo\Debug\Exe\fire_gpio #
+#                    _demo.out                                                #
+#    Map file     =  H:\fire_Kinetis\build\uart_send_demo\Debug\List\fire_gpi #
+#                    o_demo.map                                               #
+#    Command line =  H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\alloc.o   #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\arm_cm4.o #
+#                     H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\assert.o #
+#                     H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\crt0.o   #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\delay.o   #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\exti.o    #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\gpio.o    #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\io.o      #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\isr.o     #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\LED.o     #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\LED_CORE. #
+#                    o H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\lptmr.o #
+#                     H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\main.o   #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\mcg.o     #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\memtest.o #
+#                     H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\printf.o #
+#                     H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\queue.o  #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\start.o   #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\startup.o #
+#                     H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\stdlib.o #
+#                     H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\sysinit. #
+#                    o H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\uart.o  #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\uif.o     #
+#                    H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\vectors.o #
+#                     H:\fire_Kinetis\build\uart_send_demo\Debug\Obj\wdog.o   #
+#                    -o H:\fire_Kinetis\build\uart_send_demo\Debug\Exe\fire_g #
+#                    pio_demo.out --map H:\fire_Kinetis\build\uart_send_demo\ #
+#                    Debug\List\fire_gpio_demo.map --config                   #
+#                    "H:\fire_Kinetis\build\uart_send_demo\..\config          #
+#                    files\128KB_Ram.icf" --semihosting --entry               #
+#                    __iar_program_start --vfe                                #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x1fff0000 { ro section .intvec };
+"A2":  place at 0x1fff0410 { ro section .noinit };
+"P1":  place in [from 0x1fff0000 to 0x20010000] { ro, block CodeRelocate };
+"P2":  place in [from 0x1fff0000 to 0x20010000] {
+          rw, block CodeRelocateRam, block CSTACK, block HEAP };
+
+  Section              Kind        Address    Size  Object
+  -------              ----        -------    ----  ------
+"A1":                                        0x410
+  .intvec              const    0x1fff0000   0x410  vectors.o [1]
+                              - 0x1fff0410   0x410
+
+"P1", part 1 of 2:                             0x0
+  .rodata              const    0x1fff0410     0x0  zero_init3.o [4]
+
+"A2":                                         0x3c
+  .noinit              ro code  0x1fff0410    0x3c  crt0.o [1]
+                              - 0x1fff044c    0x3c
+
+"P1", part 2 of 2:                          0x1b48
+  .text                ro code  0x1fff044c   0x55c  printf.o [1]
+  .text                ro code  0x1fff09a8    0x20  stdlib.o [1]
+  .text                ro code  0x1fff09c8   0x520  start.o [1]
+  .text                ro code  0x1fff0ee8    0x38  wdog.o [1]
+  .text                ro code  0x1fff0f20    0xc0  startup.o [1]
+  .text                ro code  0x1fff0fe0    0xa0  sysinit.o [1]
+  .text                ro code  0x1fff1080    0x8c  main.o [1]
+  .text                ro code  0x1fff110c     0xc  arm_cm4.o [1]
+  .text                ro code  0x1fff1118   0x2bc  mcg.o [1]
+  .text                ro code  0x1fff13d4   0x254  uart.o [1]
+  .text                ro code  0x1fff1628    0xc0  gpio.o [1]
+  .text                ro code  0x1fff16e8    0x48  lptmr.o [1]
+  .text                ro code  0x1fff1730    0x14  LED_CORE.o [1]
+  .text                ro code  0x1fff1744    0x20  assert.o [1]
+  .text                ro code  0x1fff1764    0xb4  LED.o [1]
+  .text                ro code  0x1fff1818    0x24  delay.o [1]
+  CodeRelocate                  0x1fff183c    0x50  <Block>
+    Initializer bytes  ro data  0x1fff183c    0x50  <for CodeRelocateRam-1>
+  .rodata              const    0x1fff188c    0x4c  assert.o [1]
+  .rodata              const    0x1fff18d8    0x48  start.o [1]
+  .data_init                    0x1fff1920    0x48  <Block>
+    Initializer bytes  ro data  0x1fff1920    0x48  <for .data-1>
+  .rodata              const    0x1fff1968    0x40  start.o [1]
+  .rodata              const    0x1fff19a8    0x30  main.o [1]
+  .rodata              const    0x1fff19d8    0x30  vectors.o [1]
+  .rodata              const    0x1fff1a08    0x2c  start.o [1]
+  .rodata              const    0x1fff1a34    0x28  gpio.o [1]
+  .rodata              const    0x1fff1a5c    0x28  start.o [1]
+  .rodata              const    0x1fff1a84    0x28  start.o [1]
+  .rodata              const    0x1fff1aac    0x28  uart.o [1]
+  .text                ro code  0x1fff1ad4    0x28  data_init.o [4]
+  .text                ro code  0x1fff1afc    0x22  zero_init3.o [4]
+  .iar.init_table      const    0x1fff1b20    0x10  - Linker created -
+  .rodata              const    0x1fff1b30    0x20  start.o [1]
+  .rodata              const    0x1fff1b50    0x20  start.o [1]
+  .rodata              const    0x1fff1b70    0x20  start.o [1]
+  .rodata              const    0x1fff1b90    0x20  start.o [1]
+  .rodata              const    0x1fff1bb0    0x20  start.o [1]
+  .text                ro code  0x1fff1bd0    0x20  vectors.o [1]
+  .rodata              const    0x1fff1bf0    0x1c  main.o [1]
+  .rodata              const    0x1fff1c0c    0x1c  start.o [1]
+  .rodata              const    0x1fff1c28    0x1c  start.o [1]
+  .rodata              const    0x1fff1c44    0x1c  start.o [1]
+  .text                ro code  0x1fff1c60    0x1a  cmain.o [4]
+  .text                ro code  0x1fff1c7a     0x4  low_level_init.o [3]
+  .text                ro code  0x1fff1c7e     0x4  exit.o [3]
+  .text                ro code  0x1fff1c84     0xa  cexit.o [4]
+  .text                ro code  0x1fff1c90    0x14  exit.o [5]
+  .rodata              const    0x1fff1ca4    0x18  main.o [1]
+  .rodata              const    0x1fff1cbc    0x18  start.o [1]
+  .rodata              const    0x1fff1cd4    0x18  start.o [1]
+  .rodata              const    0x1fff1cec    0x18  start.o [1]
+  .rodata              const    0x1fff1d04    0x18  start.o [1]
+  .rodata              const    0x1fff1d1c    0x18  start.o [1]
+  .rodata              const    0x1fff1d34    0x18  start.o [1]
+  .rodata              const    0x1fff1d4c    0x18  start.o [1]
+  .rodata              const    0x1fff1d64    0x18  start.o [1]
+  .rodata              const    0x1fff1d7c    0x14  start.o [1]
+  .rodata              const    0x1fff1d90    0x14  start.o [1]
+  .rodata              const    0x1fff1da4    0x14  start.o [1]
+  .rodata              const    0x1fff1db8    0x14  start.o [1]
+  .rodata              const    0x1fff1dcc    0x14  start.o [1]
+  .rodata              const    0x1fff1de0    0x14  start.o [1]
+  .rodata              const    0x1fff1df4    0x14  start.o [1]
+  .rodata              const    0x1fff1e08    0x14  start.o [1]
+  .rodata              const    0x1fff1e1c    0x10  main.o [1]
+  .rodata              const    0x1fff1e2c    0x10  start.o [1]
+  .rodata              const    0x1fff1e3c    0x10  start.o [1]
+  .rodata              const    0x1fff1e4c    0x10  start.o [1]
+  .rodata              const    0x1fff1e5c    0x10  start.o [1]
+  .rodata              const    0x1fff1e6c    0x10  start.o [1]
+  .rodata              const    0x1fff1e7c    0x10  start.o [1]
+  .rodata              const    0x1fff1e8c    0x10  start.o [1]
+  .rodata              const    0x1fff1e9c    0x10  start.o [1]
+  .rodata              const    0x1fff1eac    0x10  start.o [1]
+  .rodata              const    0x1fff1ebc    0x10  start.o [1]
+  .rodata              const    0x1fff1ecc    0x10  start.o [1]
+  .rodata              const    0x1fff1edc    0x10  start.o [1]
+  .rodata              const    0x1fff1eec    0x10  start.o [1]
+  .text                ro code  0x1fff1efc    0x10  io.o [1]
+  .rodata              const    0x1fff1f0c     0xc  main.o [1]
+  .rodata              const    0x1fff1f18     0xc  start.o [1]
+  .rodata              const    0x1fff1f24     0xc  start.o [1]
+  .rodata              const    0x1fff1f30     0xc  start.o [1]
+  .rodata              const    0x1fff1f3c     0xc  start.o [1]
+  .text                ro code  0x1fff1f48     0xc  cstartup_M.o [4]
+  .rodata              const    0x1fff1f54     0x8  start.o [1]
+  .rodata              const    0x1fff1f5c     0x8  start.o [1]
+  .rodata              const    0x1fff1f64     0x8  start.o [1]
+  .rodata              const    0x1fff1f6c     0x8  start.o [1]
+  .rodata              const    0x1fff1f74     0x8  start.o [1]
+  .rodata              const    0x1fff1f7c     0x8  start.o [1]
+  .rodata              const    0x1fff1f84     0x8  start.o [1]
+  .rodata              const    0x1fff1f8c     0x8  start.o [1]
+                              - 0x1fff1f94  0x1b48
+
+"P2", part 1 of 2:                            0x98
+  CodeRelocateRam               0x1fff1f94    0x50  <Block>
+    CodeRelocateRam-1           0x1fff1f94    0x50  <Init block>
+      .textrw          inited   0x1fff1f94    0x50  mcg.o [1]
+  .data                         0x1fff1fe4    0x48  <Block>
+    .data-1                     0x1fff1fe4    0x48  <Init block>
+      .data            inited   0x1fff1fe4    0x14  gpio.o [1]
+      .data            inited   0x1fff1ff8    0x14  gpio.o [1]
+      .data            inited   0x1fff200c     0x8  mcg.o [1]
+      .data            inited   0x1fff2014    0x18  uart.o [1]
+                              - 0x1fff202c    0x98
+
+"P2", part 2 of 2:                             0xc
+  .bss                          0x1fff202c     0xc  <Block>
+    .bss               zero     0x1fff202c     0x4  sysinit.o [1]
+    .bss               zero     0x1fff2030     0x4  sysinit.o [1]
+    .bss               zero     0x1fff2034     0x4  sysinit.o [1]
+                              - 0x1fff2038     0xc
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xc:
+          0x1fff202c   0xc
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  rw code  ro data  rw data
+    ------            -------  -------  -------  -------
+H:\fire_Kinetis\build\uart_send_demo\Debug\Obj: [1]
+    LED.o                 180
+    LED_CORE.o             20
+    arm_cm4.o              12
+    assert.o               32                76
+    crt0.o                 60
+    delay.o                36
+    gpio.o                192                80       40
+    io.o                   16
+    lptmr.o                72
+    main.o                140               128
+    mcg.o                 700       80       88        8
+    printf.o            1 372
+    start.o             1 312             1 176
+    startup.o             192
+    stdlib.o               32
+    sysinit.o             160                         12
+    uart.o                596                64       24
+    vectors.o              32             1 088
+    wdog.o                 56
+    ----------------------------------------------------
+    Total:              5 212       80    2 700       84
+
+command line: [2]
+    ----------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                  4
+    low_level_init.o        4
+    ----------------------------------------------------
+    Total:                  8
+
+rt7M_tl.a: [4]
+    cexit.o                10
+    cmain.o                26
+    cstartup_M.o           12
+    data_init.o            40
+    zero_init3.o           34
+    ----------------------------------------------------
+    Total:                122
+
+shb_l.a: [5]
+    exit.o                 20
+    ----------------------------------------------------
+    Total:                 20
+
+    Gaps                    4                 2
+    Linker created                           16
+--------------------------------------------------------
+    Grand Total:        5 366       80    2 718       84
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.bss$$Base              0x1fff202c          --   Gb  - Linker created -
+.bss$$Limit             0x1fff2038          --   Gb  - Linker created -
+.data$$Base             0x1fff1fe4          --   Gb  - Linker created -
+.data$$Limit            0x1fff202c          --   Gb  - Linker created -
+.data_init$$Base        0x1fff1920          --   Gb  - Linker created -
+.data_init$$Limit       0x1fff1968          --   Gb  - Linker created -
+?main                   0x1fff1c61         Code  Gb  cmain.o [4]
+ASSERT_FAILED_STR       0x1fff188c   0x4c  Data  Gb  assert.o [1]
+CodeRelocate$$Base      0x1fff183c          --   Gb  - Linker created -
+CodeRelocate$$Limit     0x1fff188c          --   Gb  - Linker created -
+CodeRelocateRam$$Base   0x1fff1f94          --   Gb  - Linker created -
+CodeRelocateRam$$Limit  0x1fff1fe4          --   Gb  - Linker created -
+GPIOx                   0x1fff1fe4   0x14  Data  Gb  gpio.o [1]
+LED_init                0x1fff1765   0x34  Code  Gb  LED.o [1]
+Light1_turn             0x1fff1731    0xe  Code  Gb  LED_CORE.o [1]
+PORTX                   0x1fff1ff8   0x14  Data  Gb  gpio.o [1]
+Region$$Table$$Base     0x1fff1b20          --   Gb  - Linker created -
+Region$$Table$$Limit    0x1fff1b30          --   Gb  - Linker created -
+Reset_Handler           0x1fff0411         Code  Gb  crt0.o [1]
+UARTx                   0x1fff2014   0x18  Data  Gb  uart.o [1]
+__BOOT_STACK_ADDRESS {Abs}
+                        0x2000fff8          --   Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x1fff0000          --   Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x1fff0000          --   Gb  command line/config [2]
+__cmain                 0x1fff1c61         Code  Gb  cmain.o [4]
+__exit                  0x1fff1c91   0x14  Code  Gb  exit.o [5]
+__iar_data_init3        0x1fff1ad5   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x1fff1f49         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x1fff1afd   0x22  Code  Gb  zero_init3.o [4]
+__low_level_init        0x1fff1c7b    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x1fff0000  0x410  Data  Gb  vectors.o [1]
+_call_main              0x1fff1c6d         Code  Gb  cmain.o [4]
+_exit                   0x1fff1c85         Code  Gb  cexit.o [4]
+_main                   0x1fff1c77         Code  Gb  cmain.o [4]
+assert_failed           0x1fff1745   0x20  Code  Gb  assert.o [1]
+bus_clk_khz             0x1fff2034    0x4  Data  Gb  sysinit.o [1]
+common_startup          0x1fff0f21   0xc0  Code  Gb  startup.o [1]
+core_clk_khz            0x1fff202c    0x4  Data  Gb  sysinit.o [1]
+core_clk_mhz            0x1fff2030    0x4  Data  Gb  sysinit.o [1]
+cpu_identify            0x1fff0af7  0x20a  Code  Gb  start.o [1]
+default_isr             0x1fff1bd1   0x20  Code  Gb  vectors.o [1]
+delayms                 0x1fff1819   0x1e  Code  Gb  delay.o [1]
+exit                    0x1fff1c7f    0x4  Code  Gb  exit.o [3]
+fb_clk_init             0x1fff1047   0x16  Code  Gb  sysinit.o [1]
+flash_identify          0x1fff0d01   0xbe  Code  Gb  start.o [1]
+gpio_init               0x1fff1629   0xb4  Code  Gb  gpio.o [1]
+led                     0x1fff1799   0x1e  Code  Gb  LED.o [1]
+main                    0x1fff1081   0x8c  Code  Gb  main.o [1]
+mcg_div                 0x1fff200c    0x8  Data  Gb  mcg.o [1]
+out_char                0x1fff1efd   0x10  Code  Gb  io.o [1]
+pll_init                0x1fff1119  0x2bc  Code  Gb  mcg.o [1]
+printf                  0x1fff097f   0x26  Code  Gb  printf.o [1]
+printk                  0x1fff0575  0x40a  Code  Gb  printf.o [1]
+printk_mknumstr         0x1fff047f   0xaa  Code  Lc  printf.o [1]
+printk_pad_space        0x1fff054f   0x26  Code  Lc  printf.o [1]
+printk_pad_zero         0x1fff0529   0x26  Code  Lc  printf.o [1]
+printk_putc             0x1fff044d   0x32  Code  Lc  printf.o [1]
+set_sys_dividers        0x1fff1f95   0x50  Code  Gb  mcg.o [1]
+start                   0x1fff09c9  0x12e  Code  Gb  start.o [1]
+strlen                  0x1fff09a9   0x20  Code  Gb  stdlib.o [1]
+sysinit                 0x1fff0fe1   0x50  Code  Gb  sysinit.o [1]
+time_delay_ms           0x1fff16e9   0x48  Code  Gb  lptmr.o [1]
+trace_clk_init          0x1fff1031   0x16  Code  Gb  sysinit.o [1]
+uart_init               0x1fff13d5  0x1bc  Code  Gb  uart.o [1]
+uart_putchar            0x1fff1591   0x1a  Code  Gb  uart.o [1]
+uart_sendN              0x1fff15ab   0x22  Code  Gb  uart.o [1]
+uart_sendStr            0x1fff15cd   0x1c  Code  Gb  uart.o [1]
+water_lights            0x1fff17b7   0x5c  Code  Gb  LED.o [1]
+wdog_disable            0x1fff0ee9   0x16  Code  Gb  wdog.o [1]
+wdog_unlock             0x1fff0f01   0x16  Code  Gb  wdog.o [1]
+write_vtor              0x1fff110d    0x6  Code  Gb  arm_cm4.o [1]
+
+
+[1] = H:\fire_Kinetis\build\uart_send_demo\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  5 366 bytes of readonly  code memory
+     80 bytes of readwrite code memory
+  2 718 bytes of readonly  data memory
+     84 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

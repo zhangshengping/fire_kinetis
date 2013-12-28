@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\build\ucos-iii_demo\Ex1.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\adc_demo\fire_adc_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\fire_demo\fire_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\gpio_demo\fire_gpio_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\led_demo\fire_led_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\exti_demo\fire_exti_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\sd_demo\fire_sd_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\uart_send_demo\fire_uart_send_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\uart_loop_demo\fire_uart_loop_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\uart_int_demo\fire_uart_int_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\adc_demo\fire_adc_demo.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\ucos_led_demo\fire_ucos_led_demo.ewp</path>
+  </project>
+  <project>
+    <path>E:\k60\K60&#x76F8;&#x5173;&#x8D44;&#x6599;\02 IAR&#x7B80;&#x660e;&#x64CD;&#x4F5C;&#x53CA;&#x4F8B;&#x7A0B;\&#x9F99;&#x4e18;&#x6838;&#x5FC3;&#x677F;&#x6e90;&#x4ee3;&#x7801;&#xFF0C;&#x8BF7;&#x627F;&#x8BFA;&#x4e0D;&#x5916;&#x4F20;&#xFF0C;&#x8C22;&#x8C22;\01_LQ_light\LQ_light.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\smart_car\smart_car.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\build\test_printf\test_printf.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+

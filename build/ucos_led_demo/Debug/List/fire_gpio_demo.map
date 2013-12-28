@@ -1,0 +1,514 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.60.1.5097/W32 for ARM               08/Dec/2013  22:24:10 #
+# Copyright 2007-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  H:\fire_Kinetis\build\ucos_led_demo\Debug\Exe\fire_gpio_ #
+#                    demo.out                                                 #
+#    Map file     =  H:\fire_Kinetis\build\ucos_led_demo\Debug\List\fire_gpio #
+#                    _demo.map                                                #
+#    Command line =  H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\alloc.o    #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\app.o      #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\app_hooks. #
+#                    o H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\arm_cm4. #
+#                    o H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\assert.o #
+#                     H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\BSP.o     #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\crt0.o     #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\delay.o    #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\exti.o     #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\gpio.o     #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\io.o       #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\isr.o      #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\LED.o      #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\LED_CORE.o #
+#                     H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\lptmr.o   #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\main.o     #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\mcg.o      #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\memtest.o  #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\nokia_5110 #
+#                    .o H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\os_core #
+#                    .o H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\os_cpu_ #
+#                    a.o H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\os_cpu #
+#                    _c.o H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\os_db #
+#                    g.o H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\os_fla #
+#                    g.o H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\os_mbo #
+#                    x.o H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\os_mem #
+#                    .o H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\os_mute #
+#                    x.o H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\os_q.o #
+#                     H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\os_sem.o  #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\os_task.o  #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\os_time.o  #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\os_tmr.o   #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\printf.o   #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\queue.o    #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\start.o    #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\startup.o  #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\stdlib.o   #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\sysinit.o  #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\uart.o     #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\uif.o      #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\vectors.o  #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj\wdog.o -o  #
+#                    H:\fire_Kinetis\build\ucos_led_demo\Debug\Exe\fire_gpio_ #
+#                    demo.out --map H:\fire_Kinetis\build\ucos_led_demo\Debug #
+#                    \List\fire_gpio_demo.map --config                        #
+#                    "H:\fire_Kinetis\build\config                            #
+#                    files\fire_RAM_K60N512.icf" --semihosting --entry        #
+#                    __iar_program_start --vfe                                #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x1fff0000 { ro section .intvec };
+"A2":  place at 0x1fff0410 { ro section .noinit };
+"P1":  place in [from 0x1fff0000 to 0x20010000] { ro, block CodeRelocate };
+"P2":  place in [from 0x1fff0000 to 0x20010000] {
+          rw, block CodeRelocateRam, block CSTACK, block HEAP };
+
+  Section              Kind        Address    Size  Object
+  -------              ----        -------    ----  ------
+"A1":                                        0x410
+  .intvec              const    0x1fff0000   0x410  vectors.o [1]
+                              - 0x1fff0410   0x410
+
+"P1", part 1 of 2:                             0x0
+  .rodata              const    0x1fff0410     0x0  zero_init3.o [4]
+
+"A2":                                         0x3c
+  .noinit              ro code  0x1fff0410    0x3c  crt0.o [1]
+                              - 0x1fff044c    0x3c
+
+"P1", part 2 of 2:                          0x3010
+  .text                ro code  0x1fff044c   0x79c  start.o [1]
+  .text                ro code  0x1fff0be8    0x30  wdog.o [1]
+  .text                ro code  0x1fff0c18    0x70  startup.o [1]
+  .text                ro code  0x1fff0c88    0x6c  sysinit.o [1]
+  .text                ro code  0x1fff0cf4   0x500  printf.o [1]
+  .text                ro code  0x1fff11f4   0x138  app.o [1]
+  .text                ro code  0x1fff132c    0x76  ABImemcpy_unaligned.o [4]
+  .text                ro code  0x1fff13a2    0x22  zero_init3.o [4]
+  .text                ro code  0x1fff13c4    0xa8  arm_cm4.o [1]
+  .text                ro code  0x1fff146c     0x6  ABImemclr.o [4]
+  .text                ro code  0x1fff1474   0x198  mcg.o [1]
+  .text                ro code  0x1fff160c   0x16c  uart.o [1]
+  .text                ro code  0x1fff1778    0x14  stdlib.o [1]
+  .text                ro code  0x1fff178c   0x210  os_q.o [1]
+  .text                ro code  0x1fff199c    0xd0  os_time.o [1]
+  .text                ro code  0x1fff1a6c   0x1fe  nokia_5110.o [1]
+  .text                ro code  0x1fff1c6c   0x128  os_cpu_c.o [1]
+  .text                ro code  0x1fff1d94   0x754  os_core.o [1]
+  .text                ro code  0x1fff24e8    0xb4  BSP.o [1]
+  .text                ro code  0x1fff259c   0x39c  os_task.o [1]
+  .text                ro code  0x1fff2938    0x10  LED_CORE.o [1]
+  .text                ro code  0x1fff2948    0x5e  ABImemset.o [4]
+  .text                ro code  0x1fff29a8    0x6c  assert.o [1]
+  CODE                 ro code  0x1fff2a14    0xac  os_cpu_a.o [1]
+  .text                ro code  0x1fff2ac0    0x94  gpio.o [1]
+  .text                ro code  0x1fff2b54     0x6  ABImemclr4.o [4]
+  .text                ro code  0x1fff2b5a    0x10  app_hooks.o [1]
+  .text                ro code  0x1fff2b6c   0x1e8  os_tmr.o [1]
+  .text                ro code  0x1fff2d54    0x62  os_flag.o [1]
+  .text                ro code  0x1fff2db8    0x48  os_mem.o [1]
+  .text                ro code  0x1fff2e00     0x2  os_dbg.o [1]
+  .text                ro code  0x1fff2e04    0x50  exti.o [1]
+  .text                ro code  0x1fff2e54    0xa8  LED.o [1]
+  .text                ro code  0x1fff2efc    0x32  ABImemset48.o [4]
+  .text                ro code  0x1fff2f30   0x158  os_sem.o [1]
+  .text                ro code  0x1fff3088    0x18  delay.o [1]
+  .data_init                    0x1fff30a0   0x2a0  <Block>
+    Initializer bytes  ro data  0x1fff30a0   0x2a0  <for .data-1>
+  .text                ro code  0x1fff3340    0x50  vectors.o [1]
+  CodeRelocate                  0x1fff3390    0x3c  <Block>
+    Initializer bytes  ro data  0x1fff3390    0x3c  <for CodeRelocateRam-1>
+  .text                ro code  0x1fff33cc    0x28  data_init.o [4]
+  .iar.init_table      const    0x1fff33f4    0x10  - Linker created -
+  .text                ro code  0x1fff3404    0x1a  cmain.o [4]
+  .text                ro code  0x1fff341e     0x4  low_level_init.o [3]
+  .text                ro code  0x1fff3422     0x4  exit.o [3]
+  .text                ro code  0x1fff3428     0xa  cexit.o [4]
+  .text                ro code  0x1fff3434    0x14  exit.o [5]
+  .text                ro code  0x1fff3448     0xc  cstartup_M.o [4]
+  .text                ro code  0x1fff3454     0x8  io.o [1]
+                              - 0x1fff345c  0x3010
+
+"P2", part 1 of 2:                           0x2dc
+  .data                         0x1fff345c   0x2a0  <Block>
+    .data-1                     0x1fff345c   0x2a0  <Init block>
+      .data            inited   0x1fff345c    0x30  app.o [1]
+      .data            inited   0x1fff348c    0x28  gpio.o [1]
+      .data            inited   0x1fff34b4     0x8  mcg.o [1]
+      .data            inited   0x1fff34bc   0x228  nokia_5110.o [1]
+      .data            inited   0x1fff36e4    0x18  uart.o [1]
+  CodeRelocateRam               0x1fff36fc    0x3c  <Block>
+    CodeRelocateRam-1           0x1fff36fc    0x3c  <Init block>
+      .textrw          inited   0x1fff36fc    0x3c  mcg.o [1]
+                              - 0x1fff3738   0x2dc
+
+"P2", part 2 of 2:                          0x1dd8
+  .bss                          0x1fff3738  0x1dd8  <Block>
+    .bss               zero     0x1fff3738   0x200  app.o [1]
+    .bss               zero     0x1fff3938   0x600  app.o [1]
+    .bss               zero     0x1fff3f38   0xcbc  os_core.o [1]
+    .bss               zero     0x1fff4bf4    0x50  os_core.o [1]
+    .bss               zero     0x1fff4c44     0x4  os_core.o [1]
+    .bss               zero     0x1fff4c48   0x100  os_core.o [1]
+    .bss               zero     0x1fff4d48     0x4  os_core.o [1]
+    .bss               zero     0x1fff4d4c    0x78  os_core.o [1]
+    .bss               zero     0x1fff4dc4     0x4  os_core.o [1]
+    .bss               zero     0x1fff4dc8    0x60  os_core.o [1]
+    .bss               zero     0x1fff4e28     0x4  os_core.o [1]
+    .bss               zero     0x1fff4e2c     0x4  os_core.o [1]
+    .bss               zero     0x1fff4e30     0x4  os_core.o [1]
+    .bss               zero     0x1fff4e34   0x280  os_core.o [1]
+    .bss               zero     0x1fff50b4     0x4  os_core.o [1]
+    .bss               zero     0x1fff50b8   0x200  os_core.o [1]
+    .bss               zero     0x1fff52b8    0x40  os_core.o [1]
+    .bss               zero     0x1fff52f8   0x208  os_cpu_c.o [1]
+    .bss               zero     0x1fff5500     0xc  sysinit.o [1]
+    .bss               zero     0x1fff550c     0x2  os_core.o [1]
+    .bss               zero     0x1fff550e     0x2  os_core.o [1]
+                              - 0x1fff5510  0x1dd8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1dd8:
+          0x1fff3738  0x1dd8
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  rw code  ro data  rw data
+    ------                 -------  -------  -------  -------
+H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj: [1]
+    BSP.o                      180
+    LED.o                      168
+    LED_CORE.o                  16
+    app.o                      312                48    2 096
+    app_hooks.o                 16
+    arm_cm4.o                  168
+    assert.o                   108
+    crt0.o                      60
+    delay.o                     24
+    exti.o                      80
+    gpio.o                     148                40       40
+    io.o                         8
+    mcg.o                      408       60       68        8
+    nokia_5110.o               510               552      552
+    os_core.o                1 876                      5 060
+    os_cpu_a.o                 172
+    os_cpu_c.o                 296                        520
+    os_dbg.o                     2
+    os_flag.o                   98
+    os_mem.o                    72
+    os_q.o                     528
+    os_sem.o                   344
+    os_task.o                  924
+    os_time.o                  208
+    os_tmr.o                   488
+    printf.o                 1 280
+    start.o                  1 948
+    startup.o                  112
+    stdlib.o                    20
+    sysinit.o                  108                         12
+    uart.o                     364                24       24
+    vectors.o                   80             1 040
+    wdog.o                      48
+    ---------------------------------------------------------
+    Total:                  11 174       60    1 772    8 312
+
+command line: [2]
+    ---------------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                       4
+    low_level_init.o             4
+    ---------------------------------------------------------
+    Total:                       8
+
+rt7M_tl.a: [4]
+    ABImemclr.o                  6
+    ABImemclr4.o                 6
+    ABImemcpy_unaligned.o      118
+    ABImemset.o                 94
+    ABImemset48.o               50
+    cexit.o                     10
+    cmain.o                     26
+    cstartup_M.o                12
+    data_init.o                 40
+    zero_init3.o                34
+    ---------------------------------------------------------
+    Total:                     396
+
+shb_l.a: [5]
+    exit.o                      20
+    ---------------------------------------------------------
+    Total:                      20
+
+    Gaps                        18
+    Linker created                                16
+-------------------------------------------------------------
+    Grand Total:            11 616       60    1 788    8 312
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.bss$$Base              0x1fff3738          --   Gb  - Linker created -
+.bss$$Limit             0x1fff5510          --   Gb  - Linker created -
+.data$$Base             0x1fff345c          --   Gb  - Linker created -
+.data$$Limit            0x1fff36fc          --   Gb  - Linker created -
+.data_init$$Base        0x1fff30a0          --   Gb  - Linker created -
+.data_init$$Limit       0x1fff3340          --   Gb  - Linker created -
+?main                   0x1fff3405         Code  Gb  cmain.o [4]
+ASSERT_FAILED_STR       0x1fff29c8   0x4c  Data  Gb  assert.o [1]
+App_TCBInitHook         0x1fff2b67    0x2  Code  Gb  app_hooks.o [1]
+App_TaskCreateHook      0x1fff2b5b    0x2  Code  Gb  app_hooks.o [1]
+App_TaskDelHook         0x1fff2b5d    0x2  Code  Gb  app_hooks.o [1]
+App_TaskIdleHook        0x1fff2b5f    0x2  Code  Gb  app_hooks.o [1]
+App_TaskReturnHook      0x1fff2b63    0x2  Code  Gb  app_hooks.o [1]
+App_TaskStatHook        0x1fff2b61    0x2  Code  Gb  app_hooks.o [1]
+App_TaskSwHook          0x1fff2b65    0x2  Code  Gb  app_hooks.o [1]
+App_TimeTickHook        0x1fff2b69    0x2  Code  Gb  app_hooks.o [1]
+BSP_Init                0x1fff24e9   0xae  Code  Gb  BSP.o [1]
+CodeRelocate$$Base      0x1fff3390          --   Gb  - Linker created -
+CodeRelocate$$Limit     0x1fff33cc          --   Gb  - Linker created -
+CodeRelocateRam$$Base   0x1fff36fc          --   Gb  - Linker created -
+CodeRelocateRam$$Limit  0x1fff3738          --   Gb  - Linker created -
+GPIOx                   0x1fff348c   0x14  Data  Gb  gpio.o [1]
+LCD_clear               0x1fff1b1b   0x2a  Code  Gb  nokia_5110.o [1]
+LCD_init                0x1fff1ab1   0x6a  Code  Gb  nokia_5110.o [1]
+LCD_pin_config          0x1fff1a6f   0x42  Code  Gb  nokia_5110.o [1]
+LCD_set_XY              0x1fff1b45   0x1c  Code  Gb  nokia_5110.o [1]
+LCD_write_byte          0x1fff1bbd   0x4c  Code  Gb  nokia_5110.o [1]
+LCD_write_char          0x1fff1b61   0x42  Code  Gb  nokia_5110.o [1]
+LCD_write_english_string
+                        0x1fff1ba3   0x1a  Code  Gb  nokia_5110.o [1]
+LCD_write_num           0x1fff1c11   0x5a  Code  Gb  nokia_5110.o [1]
+LED_init                0x1fff2e55   0x36  Code  Gb  LED.o [1]
+Light4_turn             0x1fff2939    0xc  Code  Gb  LED_CORE.o [1]
+OSCPUUsage              0x1fff3f38    0x1  Data  Gb  os_core.o [1]
+OSCtxSw                 0x1fff2a47         Code  Gb  os_cpu_a.o [1]
+OSCtxSwCtr              0x1fff3f4c    0x4  Data  Gb  os_core.o [1]
+OSDebugInit             0x1fff2e01    0x2  Code  Gb  os_dbg.o [1]
+OSEventFreeList         0x1fff3f50    0x4  Data  Gb  os_core.o [1]
+OSEventNameSet          0x1fff1d95   0x30  Code  Gb  os_core.o [1]
+OSEventTbl              0x1fff3f74   0xf0  Data  Gb  os_core.o [1]
+OSFlagFreeList          0x1fff4c44    0x4  Data  Gb  os_core.o [1]
+OSFlagTbl               0x1fff4bf4   0x50  Data  Gb  os_core.o [1]
+OSIdleCtr               0x1fff3f5c    0x4  Data  Gb  os_core.o [1]
+OSIdleCtrMax            0x1fff3f54    0x4  Data  Gb  os_core.o [1]
+OSIdleCtrRun            0x1fff3f58    0x4  Data  Gb  os_core.o [1]
+OSInit                  0x1fff1dc5  0x140  Code  Gb  os_core.o [1]
+OSInitHookBegin         0x1fff1c6d   0x1c  Code  Gb  os_cpu_c.o [1]
+OSInitHookEnd           0x1fff1c89    0x2  Code  Gb  os_cpu_c.o [1]
+OSIntCtxSw              0x1fff2a4f         Code  Gb  os_cpu_a.o [1]
+OSIntExit               0x1fff1f05   0x64  Code  Gb  os_core.o [1]
+OSIntNesting            0x1fff3f3a    0x1  Data  Gb  os_core.o [1]
+OSLockNesting           0x1fff3f3b    0x1  Data  Gb  os_core.o [1]
+OSMemFreeList           0x1fff4d48    0x4  Data  Gb  os_core.o [1]
+OSMemTbl                0x1fff4d4c   0x78  Data  Gb  os_core.o [1]
+OSPrioCur               0x1fff3f3c    0x1  Data  Gb  os_core.o [1]
+OSPrioHighRdy           0x1fff3f3d    0x1  Data  Gb  os_core.o [1]
+OSQCreate               0x1fff178d   0x7c  Code  Gb  os_q.o [1]
+OSQFreeList             0x1fff4dc4    0x4  Data  Gb  os_core.o [1]
+OSQPend                 0x1fff1809   0xd4  Code  Gb  os_q.o [1]
+OSQPost                 0x1fff18ed   0x62  Code  Gb  os_q.o [1]
+OSQTbl                  0x1fff4dc8   0x60  Data  Gb  os_core.o [1]
+OSRdyGrp                0x1fff3f3e    0x1  Data  Gb  os_core.o [1]
+OSRdyTbl                0x1fff3f44    0x8  Data  Gb  os_core.o [1]
+OSRunning               0x1fff3f3f    0x1  Data  Gb  os_core.o [1]
+OSSchedLock             0x1fff1f69   0x22  Code  Gb  os_core.o [1]
+OSSchedUnlock           0x1fff1f8b   0x2e  Code  Gb  os_core.o [1]
+OSSemCreate             0x1fff2f31   0x3c  Code  Gb  os_sem.o [1]
+OSSemPend               0x1fff2f6d   0xb0  Code  Gb  os_sem.o [1]
+OSSemPost               0x1fff3037   0x52  Code  Gb  os_sem.o [1]
+OSStart                 0x1fff1fb9   0x32  Code  Gb  os_core.o [1]
+OSStartHighRdy          0x1fff2a23         Code  Gb  os_cpu_a.o [1]
+OSStatInit              0x1fff1feb   0x2a  Code  Gb  os_core.o [1]
+OSStatRdy               0x1fff3f39    0x1  Data  Gb  os_core.o [1]
+OSTCBCur                0x1fff3f60    0x4  Data  Gb  os_core.o [1]
+OSTCBFreeList           0x1fff3f64    0x4  Data  Gb  os_core.o [1]
+OSTCBHighRdy            0x1fff3f68    0x4  Data  Gb  os_core.o [1]
+OSTCBInitHook           0x1fff1d19    0x4  Code  Gb  os_cpu_c.o [1]
+OSTCBList               0x1fff3f6c    0x4  Data  Gb  os_core.o [1]
+OSTCBPrioTbl            0x1fff4c48  0x100  Data  Gb  os_core.o [1]
+OSTCBTbl                0x1fff4464  0x790  Data  Gb  os_core.o [1]
+OSTaskCreate            0x1fff259d   0x84  Code  Gb  os_task.o [1]
+OSTaskCreateExt         0x1fff2627   0x9c  Code  Gb  os_task.o [1]
+OSTaskCreateHook        0x1fff1c8b    0x4  Code  Gb  os_cpu_c.o [1]
+OSTaskCtr               0x1fff3f40    0x1  Data  Gb  os_core.o [1]
+OSTaskDel               0x1fff26c9  0x11c  Code  Gb  os_task.o [1]
+OSTaskDelHook           0x1fff1c8f    0x4  Code  Gb  os_cpu_c.o [1]
+OSTaskIdleHook          0x1fff1c93    0x4  Code  Gb  os_cpu_c.o [1]
+OSTaskIdleStk           0x1fff4264  0x200  Data  Gb  os_core.o [1]
+OSTaskNameSet           0x1fff27e5   0x44  Code  Gb  os_task.o [1]
+OSTaskReturnHook        0x1fff1c97    0x4  Code  Gb  os_cpu_c.o [1]
+OSTaskStatHook          0x1fff1c9b    0x4  Code  Gb  os_cpu_c.o [1]
+OSTaskStatStk           0x1fff4064  0x200  Data  Gb  os_core.o [1]
+OSTaskStkChk            0x1fff2829   0x5a  Code  Gb  os_task.o [1]
+OSTaskStkInit           0x1fff1c9f   0x76  Code  Gb  os_cpu_c.o [1]
+OSTaskSuspend           0x1fff2883   0x6e  Code  Gb  os_task.o [1]
+OSTaskSwHook            0x1fff1d15    0x4  Code  Gb  os_cpu_c.o [1]
+OSTickStepState         0x1fff3f41    0x1  Data  Gb  os_core.o [1]
+OSTime                  0x1fff3f70    0x4  Data  Gb  os_core.o [1]
+OSTimeDly               0x1fff199d   0x4c  Code  Gb  os_time.o [1]
+OSTimeDlyHMSM           0x1fff19e9   0x6e  Code  Gb  os_time.o [1]
+OSTimeTick              0x1fff201d   0x92  Code  Gb  os_core.o [1]
+OSTimeTickHook          0x1fff1d1d   0x22  Code  Gb  os_cpu_c.o [1]
+OSTmrCtr                0x1fff52f8    0x2  Data  Lc  os_cpu_c.o [1]
+OSTmrFree               0x1fff550c    0x2  Data  Gb  os_core.o [1]
+OSTmrFreeList           0x1fff50b4    0x4  Data  Gb  os_core.o [1]
+OSTmrSem                0x1fff4e2c    0x4  Data  Gb  os_core.o [1]
+OSTmrSemSignal          0x1fff4e30    0x4  Data  Gb  os_core.o [1]
+OSTmrSignal             0x1fff2b6d    0x8  Code  Gb  os_tmr.o [1]
+OSTmrTaskStk            0x1fff50b8  0x200  Data  Gb  os_core.o [1]
+OSTmrTbl                0x1fff4e34  0x280  Data  Gb  os_core.o [1]
+OSTmrTime               0x1fff4e28    0x4  Data  Gb  os_core.o [1]
+OSTmrUsed               0x1fff550e    0x2  Data  Gb  os_core.o [1]
+OSTmrWheelTbl           0x1fff52b8   0x40  Data  Gb  os_core.o [1]
+OSTmr_Init              0x1fff2b75   0xc4  Code  Gb  os_tmr.o [1]
+OSTmr_Task              0x1fff2c39   0xba  Code  Lc  os_tmr.o [1]
+OSUnMapTbl              0x1fff23e8  0x100  Data  Gb  os_core.o [1]
+OS_CPU_ExceptStk        0x1fff5300  0x200  Data  Gb  os_cpu_c.o [1]
+OS_CPU_ExceptStkBase    0x1fff52fc    0x4  Data  Gb  os_cpu_c.o [1]
+OS_CPU_PendSVHandler    0x1fff2a57         Code  Gb  os_cpu_a.o [1]
+OS_CPU_SR_Restore       0x1fff2a1d         Code  Gb  os_cpu_a.o [1]
+OS_CPU_SR_Save          0x1fff2a15         Code  Gb  os_cpu_a.o [1]
+OS_CPU_SysTickHandler   0x1fff1d3f   0x1e  Code  Gb  os_cpu_c.o [1]
+OS_CPU_SysTickInit      0x1fff1d5d   0x22  Code  Gb  os_cpu_c.o [1]
+OS_Dummy                0x1fff20af    0x2  Code  Gb  os_core.o [1]
+OS_EventTaskRdy         0x1fff20b1   0x66  Code  Gb  os_core.o [1]
+OS_EventTaskRemove      0x1fff2165   0x22  Code  Gb  os_core.o [1]
+OS_EventTaskRemoveMulti
+                        0x1fff2187   0x2e  Code  Gb  os_core.o [1]
+OS_EventTaskWait        0x1fff211d   0x48  Code  Gb  os_core.o [1]
+OS_EventWaitListInit    0x1fff21b5   0x16  Code  Gb  os_core.o [1]
+OS_FlagInit             0x1fff2d55   0x38  Code  Gb  os_flag.o [1]
+OS_FlagUnlink           0x1fff2d99   0x1e  Code  Gb  os_flag.o [1]
+OS_MemClr               0x1fff21cb    0xa  Code  Gb  os_core.o [1]
+OS_MemInit              0x1fff2db9   0x3a  Code  Gb  os_mem.o [1]
+OS_QInit                0x1fff1959   0x28  Code  Gb  os_q.o [1]
+OS_Sched                0x1fff21d5   0x4a  Code  Gb  os_core.o [1]
+OS_TCBInit              0x1fff22d3   0xea  Code  Gb  os_core.o [1]
+OS_TaskIdle             0x1fff2221   0x18  Code  Gb  os_core.o [1]
+OS_TaskReturn           0x1fff28fd   0x12  Code  Gb  os_task.o [1]
+OS_TaskStat             0x1fff2239   0x64  Code  Gb  os_core.o [1]
+OS_TaskStatStkChk       0x1fff229d   0x36  Code  Gb  os_core.o [1]
+PORTX                   0x1fff34a0   0x14  Data  Gb  gpio.o [1]
+Queue                   0x1fff345c    0x4  Data  Gb  app.o [1]
+Queuel                  0x1fff3460   0x14  Data  Gb  app.o [1]
+Region$$Table$$Base     0x1fff33f4          --   Gb  - Linker created -
+Region$$Table$$Limit    0x1fff3404          --   Gb  - Linker created -
+Reset_Handler           0x1fff0411         Code  Gb  crt0.o [1]
+Task_Start              0x1fff1281   0x62  Code  Gb  app.o [1]
+UARTx                   0x1fff36e4   0x18  Data  Gb  uart.o [1]
+__BOOT_STACK_ADDRESS {Abs}
+                        0x2000fff8          --   Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x1fff0000          --   Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x1fff0000          --   Gb  command line/config [2]
+__aeabi_memclr          0x1fff146d         Code  Gb  ABImemclr.o [4]
+__aeabi_memclr4         0x1fff2b55         Code  Gb  ABImemclr4.o [4]
+__cmain                 0x1fff3405         Code  Gb  cmain.o [4]
+__code_start__ {Abs}    0x1fff0410          --   Gb  command line/config [2]
+__exit                  0x1fff3435   0x14  Code  Gb  exit.o [5]
+__iar_Memset4_word      0x1fff2efd         Code  Gb  ABImemset48.o [4]
+__iar_Memset8_word      0x1fff2efd         Code  Gb  ABImemset48.o [4]
+__iar_Memset_word       0x1fff2949         Code  Gb  ABImemset.o [4]
+__iar_data_init3        0x1fff33cd   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x1fff3449         Code  Gb  cstartup_M.o [4]
+__iar_unaligned___aeabi_memcpy
+                        0x1fff132d         Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_unaligned___aeabi_memcpy4
+                        0x1fff134d         Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_unaligned___aeabi_memcpy8
+                        0x1fff134d         Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_zero_init3        0x1fff13a3   0x22  Code  Gb  zero_init3.o [4]
+__low_level_init        0x1fff341f    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x1fff0000  0x410  Data  Gb  vectors.o [1]
+_call_main              0x1fff3411         Code  Gb  cmain.o [4]
+_exit                   0x1fff3429         Code  Gb  cexit.o [4]
+_main                   0x1fff341b         Code  Gb  cmain.o [4]
+a                       0x1fff3474    0xc  Data  Gb  app.o [1]
+assert_failed           0x1fff29a9   0x1e  Code  Gb  assert.o [1]
+b                       0x1fff3480    0xc  Data  Gb  app.o [1]
+bus_clk_khz             0x1fff5508    0x4  Data  Gb  sysinit.o [1]
+common_startup          0x1fff0c19   0x70  Code  Gb  startup.o [1]
+core_clk_khz            0x1fff5500    0x4  Data  Gb  sysinit.o [1]
+core_clk_mhz            0x1fff5504    0x4  Data  Gb  sysinit.o [1]
+cpu_identify            0x1fff0535  0x194  Code  Gb  start.o [1]
+default_isr             0x1fff3341   0x1a  Code  Gb  vectors.o [1]
+delay_1us               0x1fff1a6d    0x2  Code  Gb  nokia_5110.o [1]
+delayms                 0x1fff3089   0x14  Code  Gb  delay.o [1]
+enable_irq              0x1fff13cb   0x5e  Code  Gb  arm_cm4.o [1]
+exit                    0x1fff3423    0x4  Code  Gb  exit.o [3]
+exti_init               0x1fff2e05   0x50  Code  Gb  exti.o [1]
+flash_identify          0x1fff06c9   0x66  Code  Gb  start.o [1]
+font6x8                 0x1fff34bc  0x228  Data  Gb  nokia_5110.o [1]
+gpio_init               0x1fff2ac1   0x66  Code  Gb  gpio.o [1]
+main                    0x1fff12e3   0x1a  Code  Gb  app.o [1]
+mcg_div                 0x1fff34b4    0x8  Data  Gb  mcg.o [1]
+out_char                0x1fff3455    0x8  Code  Gb  io.o [1]
+pll_init                0x1fff1475  0x198  Code  Gb  mcg.o [1]
+printf                  0x1fff11d3   0x1e  Code  Gb  printf.o [1]
+printk                  0x1fff0df7  0x3dc  Code  Gb  printf.o [1]
+printk_mknumstr         0x1fff0d1f   0x64  Code  Lc  printf.o [1]
+printk_pad_space        0x1fff0dbd   0x3a  Code  Lc  printf.o [1]
+printk_pad_zero         0x1fff0d83   0x3a  Code  Lc  printf.o [1]
+printk_putc             0x1fff0cf5   0x2a  Code  Lc  printf.o [1]
+set_sys_dividers        0x1fff36fd   0x3c  Code  Gb  mcg.o [1]
+start                   0x1fff044d   0xe6  Code  Gb  start.o [1]
+startup_task_stk        0x1fff3738  0x200  Data  Gb  app.o [1]
+strlen                  0x1fff1779   0x14  Code  Gb  stdlib.o [1]
+sysinit                 0x1fff0c89   0x5c  Code  Gb  sysinit.o [1]
+task1                   0x1fff11f5   0x26  Code  Gb  app.o [1]
+task1_stk               0x1fff3938  0x200  Data  Gb  app.o [1]
+task2                   0x1fff1243   0x3e  Code  Gb  app.o [1]
+task2_stk               0x1fff3b38  0x200  Data  Gb  app.o [1]
+task3                   0x1fff121b   0x28  Code  Gb  app.o [1]
+task3_stk               0x1fff3d38  0x200  Data  Gb  app.o [1]
+uart_init               0x1fff160d  0x114  Code  Gb  uart.o [1]
+uart_putchar            0x1fff1721   0x14  Code  Gb  uart.o [1]
+water_lights            0x1fff2e8b   0x6c  Code  Gb  LED.o [1]
+wdog_disable            0x1fff0be9   0x14  Code  Gb  wdog.o [1]
+wdog_unlock             0x1fff0bfd   0x14  Code  Gb  wdog.o [1]
+write_vtor              0x1fff13c5    0x6  Code  Gb  arm_cm4.o [1]
+
+
+[1] = H:\fire_Kinetis\build\ucos_led_demo\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  11 616 bytes of readonly  code memory
+      60 bytes of readwrite code memory
+   1 788 bytes of readonly  data memory
+   8 312 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

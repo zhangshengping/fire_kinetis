@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3787030663</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\src\projects\fire_gpio_demo\include.h</file>
+      <file>$PROJ_DIR$\..\..\src\projects\smart_car\main.c</file>
+      <file>$PROJ_DIR$\..\..\src\projects\smart_car\isr.c</file>
+      <file>$PROJ_DIR$\..\..\src\cpu\clk_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\src\common\common.h</file>
+      <file>$PROJ_DIR$\..\..\src\projects\fire_gpio_demo\isr.h</file>
+      <file>$PROJ_DIR$\..\..\src\HWdrivers\LED\LED_CORE.h</file>
+      <file>$PROJ_DIR$\..\..\src\HWdrivers\Camera\SCCB\sccb.c</file>
+      <file>$PROJ_DIR$\..\..\src\HWdrivers\LED\LED_CORE.c</file>
+      <file>$PROJ_DIR$\..\..\src\HWdrivers\Nokia5110_LCD\inc\english_6x8_pixel.h</file>
+      <file>$PROJ_DIR$\..\..\src\HWdrivers\Nokia5110_LCD\inc\write_chinese_string_pixel.h</file>
+      <file>$PROJ_DIR$\..\..\src\HWdrivers\Nokia5110_LCD\src\nokia_5110.c</file>
+      <file>$PROJ_DIR$\..\..\src\HWdrivers\Nokia5110_LCD\inc\nokia_5110.h</file>
+      <file>$PROJ_DIR$\..\..\src\common\alloc.c</file>
+      <file>$PROJ_DIR$\..\..\src\common\assert.c</file>
+      <file>$PROJ_DIR$\..\..\src\common\io.c</file>
+      <file>$PROJ_DIR$\..\..\src\common\memtest.c</file>
+      <file>$PROJ_DIR$\..\..\src\common\printf.c</file>
+      <file>$PROJ_DIR$\..\..\src\common\queue.c</file>
+      <file>$PROJ_DIR$\..\..\src\common\startup.c</file>
+      <file>$PROJ_DIR$\..\..\src\common\stdlib.c</file>
+      <file>$PROJ_DIR$\..\..\src\common\uif.c</file>
+      <file>$PROJ_DIR$\..\..\src\cpu\arm_cm4.c</file>
+      <file>$PROJ_DIR$\..\..\src\cpu\crt0.s</file>
+      <file>$PROJ_DIR$\..\..\src\cpu\start.c</file>
+      <file>$PROJ_DIR$\..\..\src\cpu\sysinit.c</file>
+      <file>$PROJ_DIR$\..\..\src\cpu\vectors.c</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\dma\dma.c</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\delay\delay.c</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\LED\LED.C</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\exti\exti.c</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\gpio\gpio.c</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\mcg\mcg.c</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\lptmr\lptmr.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\memtest.pbi</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\uart\uart.c</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\wdog\wdog.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\exti.pbi</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\mcg\mcg_cfg.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\vectors.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\sysinit.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\assert.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\queue.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\arm_cm4.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\start.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\delay.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\sysinit.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\mcg.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\printf.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\exti.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\io.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\vectors.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\start.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\delay.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\LED.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\wdog.o</file>
+      <file>$PROJ_DIR$\..\..\src\cpu\sysinit.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\memtest.o</file>
+      <file>$PROJ_DIR$\..\..\src\common\memtest.h</file>
+      <file>$PROJ_DIR$\..\..\src\common\startup.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\queue.o</file>
+      <file>$PROJ_DIR$\..\..\src\common\io.h</file>
+      <file>$PROJ_DIR$\..\..\src\common\queue.h</file>
+      <file>$PROJ_DIR$\..\..\src\projects\smart_car\isr.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\gpio.o</file>
+      <file>$PROJ_DIR$\..\..\src\common\stdlib.h</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\LED\LED.h</file>
+      <file>$PROJ_DIR$\..\..\src\common\assert.h</file>
+      <file>$PROJ_DIR$\..\iar.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\mcg\Fire_kinetis_MCG_CFG.h</file>
+      <file>$PROJ_DIR$\..\..\src\cpu\arm_cm4.h</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\mcg\mcg.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>E:\freescale\&#x91Ce;&#x706B;-&#x5C0F;&#x9738;&#x738B;&#x7CFB;&#x5217;&#x5149;&#x76D8;\fire_Kinetis\build\config files\fire_RAM_K60N512.icf</file>
+      <file>$PROJ_DIR$\Debug\Obj\nokia_5110.pbi</file>
+      <file>$PROJ_DIR$\..\..\src\cpu\headers\MK60DZ10.h</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\dma\dma.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\wdog.pbi</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\gpio\gpio_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\fire_drivers_cfg.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lptmr.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mcg.pbi</file>
+      <file>$PROJ_DIR$\..\..\src\HWdrivers\Camera\SCCB\sccb.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\delay\delay.h</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\lptmr\lptmr.h</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\uart\uart.h</file>
+      <file>$PROJ_DIR$\..\..\src\cpu\vectors.h</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\gpio\gpio.h</file>
+      <file>$PROJ_DIR$\..\..\src\common\uif.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\LED_CORE.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\dma.o</file>
+      <file>$PROJ_DIR$\..\..\src\cpu\start.h</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$PROJ_DIR$\Debug\Exe\fire_gpio_demo.out</file>
+      <file>$PROJ_DIR$\..\..\src\projects\fire_gpio_demo\main.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\isr.o</file>
+      <file>$PROJ_DIR$\..\..\src\projects\fire_gpio_demo\isr.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\sccb.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\exti\exti.h</file>
+      <file>$PROJ_DIR$\..\..\src\platforms\k60_fire.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\dma.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\alloc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\assert.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nokia_5110.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stdlib.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\uif.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\sccb.pbi</file>
+      <file>$PROJ_DIR$\Debug\Exe\fire_gpio_demo.hex</file>
+      <file>$PROJ_DIR$\Debug\Obj\isr.pbi</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\wdog\wdog.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\..\..\src\drivers\PIT\PIT.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\io.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\LED_CORE.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\lptmr.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\arm_cm4.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\LED.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stdlib.pbi</file>
+      <file>$PROJ_DIR$\..\..\src\projects\smart_car\include.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\alloc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\gpio.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\uif.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\crt0.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$PROJ_DIR$\Debug\List\fire_gpio_demo.map</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\printf.pbi</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 139 99</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\projects\smart_car\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 104</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 121</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 131 93 90 89 86 105 117 122 78 67</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 131 93 90 89 86 105 117 122 78 67</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\projects\smart_car\isr.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 116</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 131 93 90 89 86 105 117 122 78 67</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 131 93 90 89 86 105 117 122 78 67</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\HWdrivers\Camera\SCCB\sccb.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 103</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 114</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 84 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\HWdrivers\LED\LED_CORE.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 95</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 126</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 6 93 80 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 93 80 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\HWdrivers\Nokia5110_LCD\src\nokia_5110.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 110</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 76</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93 9 10</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93 9 10</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\common\alloc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 132</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\common\assert.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 109</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 67 93 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 67 93 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\common\io.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 90</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 90</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\common\memtest.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 59</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\common\printf.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 141</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 120</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 120</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\common\queue.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 61</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 63</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 63</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\common\startup.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 111</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 140</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\common\stdlib.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 112</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 130</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\common\uif.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 113</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 134</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 94</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 94</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\cpu\arm_cm4.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\cpu\crt0.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 135</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\cpu\start.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 97 117</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\cpu\sysinit.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 46</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 90 3</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 90 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\cpu\vectors.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 91 64 131 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93 90 89 86 105 117 122 78 67</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 91 64 131 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93 90 89 86 105 117 122 78 67</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\drivers\dma\dma.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 96</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 107</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93 122 78</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93 122 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\drivers\delay\delay.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 86 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 86 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\drivers\LED\LED.C</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 129</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 67 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93 86</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 67 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93 86</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\drivers\exti\exti.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93 105</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93 105</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\drivers\gpio\gpio.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 65</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 133</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 93</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\drivers\mcg\mcg.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 38</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 38</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\drivers\lptmr\lptmr.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 127</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 89</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 89</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\drivers\uart\uart.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 90</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 90</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\drivers\wdog\wdog.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 117</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 117</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\fire_gpio_demo.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 139</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 115</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 75 108 43 109 135 53 96 49 65 50 101 55 95 127 104 47 58 110 48 61 103 52 111 112 46 54 113 51 56 92 87 98 138</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\projects\fire_gpio_demo\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 104</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 121</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 0 93 90 89 12 105 5 86 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\projects\fire_gpio_demo\isr.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 116</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 72 106 73 71 77 137 136 88 123 70 118 74 119 69 68 62 60 66 124 57 81 80 0 93 90 89 12 105 5 86 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\src\projects\fire_gpio_demo\main.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\src\projects\fire_gpio_demo\isr.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

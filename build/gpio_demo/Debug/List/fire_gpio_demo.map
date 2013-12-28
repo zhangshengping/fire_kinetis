@@ -1,0 +1,330 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.70.1.5641/W32 for ARM               10/Dec/2013  10:26:24 #
+# Copyright 2007-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  H:\fire_Kinetis\build\gpio_demo\Debug\Exe\fire_gpio_demo #
+#                    .out                                                     #
+#    Map file     =  H:\fire_Kinetis\build\gpio_demo\Debug\List\fire_gpio_dem #
+#                    o.map                                                    #
+#    Command line =  H:\fire_Kinetis\build\gpio_demo\Debug\Obj\alloc.o        #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\arm_cm4.o      #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\assert.o       #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\crt0.o         #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\delay.o        #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\exti.o         #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\gpio.o         #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\hw_sdhc.o      #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\io.o           #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\isr.o          #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\LED.o          #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\LED_CORE.o     #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\lptmr.o        #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\main.o         #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\mcg.o          #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\memtest.o      #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\nokia_5110.o   #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\printf.o       #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\queue.o        #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\sccb.o         #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\start.o        #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\startup.o      #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\stdlib.o       #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\sysinit.o      #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\uart.o         #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\uif.o          #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\vectors.o      #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Obj\wdog.o -o      #
+#                    H:\fire_Kinetis\build\gpio_demo\Debug\Exe\fire_gpio_demo #
+#                    .out --map H:\fire_Kinetis\build\gpio_demo\Debug\List\fi #
+#                    re_gpio_demo.map --config "E:\freescale\“∞ª-–°∞‘Õıœµ¡–π #
+#                    ‚≈Ã\fire_Kinetis\build\config                            #
+#                    files\fire_RAM_K60N512.icf" --semihosting --entry        #
+#                    __iar_program_start --vfe                                #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x1fff0000 { ro section .intvec };
+"A2":  place at 0x1fff0410 { ro section .noinit };
+"P1":  place in [from 0x1fff0000 to 0x20010000] { ro, block CodeRelocate };
+"P2":  place in [from 0x1fff0000 to 0x20010000] {
+          rw, block CodeRelocateRam, block CSTACK, block HEAP };
+
+  Section              Kind        Address    Size  Object
+  -------              ----        -------    ----  ------
+"A1":                                        0x410
+  .intvec              const    0x1fff0000   0x410  vectors.o [1]
+                              - 0x1fff0410   0x410
+
+"P1", part 1 of 2:                             0x0
+  .rodata              const    0x1fff0410     0x0  zero_init3.o [4]
+
+"A2":                                         0x3c
+  .noinit              ro code  0x1fff0410    0x3c  crt0.o [1]
+                              - 0x1fff044c    0x3c
+
+"P1", part 2 of 2:                          0x2424
+  .data_init                    0x1fff044c   0x8b4  <Block>
+    Initializer bytes  ro data  0x1fff044c   0x8b4  <for .data-1>
+  .text                ro code  0x1fff0d00   0x79c  start.o [1]
+  .text                ro code  0x1fff149c    0x30  wdog.o [1]
+  .text                ro code  0x1fff14cc    0x70  startup.o [1]
+  .text                ro code  0x1fff153c    0x6c  sysinit.o [1]
+  .text                ro code  0x1fff15a8   0x500  printf.o [1]
+  .text                ro code  0x1fff1aa8   0x148  main.o [1]
+  .text                ro code  0x1fff1bf0    0x76  ABImemcpy_unaligned.o [4]
+  .text                ro code  0x1fff1c66    0x22  zero_init3.o [4]
+  .text                ro code  0x1fff1c88   0x13c  arm_cm4.o [1]
+  .text                ro code  0x1fff1dc4     0x6  ABImemclr.o [4]
+  .text                ro code  0x1fff1dcc   0x198  mcg.o [1]
+  .text                ro code  0x1fff1f64   0x16c  uart.o [1]
+  .text                ro code  0x1fff20d0    0x14  stdlib.o [1]
+  .text                ro code  0x1fff20e4   0x30c  nokia_5110.o [1]
+  .text                ro code  0x1fff23f0    0x94  gpio.o [1]
+  .text                ro code  0x1fff2484    0x50  exti.o [1]
+  .text                ro code  0x1fff24d4    0x5e  ABImemset.o [4]
+  .text                ro code  0x1fff2534    0x6c  assert.o [1]
+  .text                ro code  0x1fff25a0    0xa8  LED.o [1]
+  .text                ro code  0x1fff2648    0x18  delay.o [1]
+  .text                ro code  0x1fff2660    0xd8  isr.o [1]
+  .text                ro code  0x1fff2738    0x1c  LED_CORE.o [1]
+  .text                ro code  0x1fff2754    0x50  vectors.o [1]
+  CodeRelocate                  0x1fff27a4    0x3c  <Block>
+    Initializer bytes  ro data  0x1fff27a4    0x3c  <for CodeRelocateRam-1>
+  .text                ro code  0x1fff27e0    0x28  data_init.o [4]
+  .iar.init_table      const    0x1fff2808    0x10  - Linker created -
+  .text                ro code  0x1fff2818    0x1a  cmain.o [4]
+  .text                ro code  0x1fff2832     0x4  low_level_init.o [3]
+  .text                ro code  0x1fff2836     0x4  exit.o [3]
+  .text                ro code  0x1fff283c     0xa  cexit.o [4]
+  .text                ro code  0x1fff2848    0x14  exit.o [5]
+  .text                ro code  0x1fff285c     0xc  cstartup_M.o [4]
+  .text                ro code  0x1fff2868     0x8  io.o [1]
+                              - 0x1fff2870  0x2424
+
+"P2", part 1 of 2:                           0x8f0
+  .data                         0x1fff2870   0x8b4  <Block>
+    .data-1                     0x1fff2870   0x8b4  <Init block>
+      .data            inited   0x1fff2870    0x28  gpio.o [1]
+      .data            inited   0x1fff2898   0x644  main.o [1]
+      .data            inited   0x1fff2edc     0x8  mcg.o [1]
+      .data            inited   0x1fff2ee4   0x228  nokia_5110.o [1]
+      .data            inited   0x1fff310c    0x18  uart.o [1]
+  CodeRelocateRam               0x1fff3124    0x3c  <Block>
+    CodeRelocateRam-1           0x1fff3124    0x3c  <Init block>
+      .textrw          inited   0x1fff3124    0x3c  mcg.o [1]
+                              - 0x1fff3160   0x8f0
+
+"P2", part 2 of 2:                             0xf
+  .bss                          0x1fff3160     0xf  <Block>
+    .bss               zero     0x1fff3160     0xc  sysinit.o [1]
+    .bss               zero     0x1fff316c     0x3  isr.o [1]
+                              - 0x1fff316f     0xf
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xf:
+          0x1fff3160   0xf
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  rw code  ro data  rw data
+    ------                 -------  -------  -------  -------
+H:\fire_Kinetis\build\gpio_demo\Debug\Obj: [1]
+    LED.o                      168
+    LED_CORE.o                  28
+    arm_cm4.o                  316
+    assert.o                   108
+    crt0.o                      60
+    delay.o                     24
+    exti.o                      80
+    gpio.o                     148                40       40
+    io.o                         8
+    isr.o                      216                          3
+    main.o                     328             1 604    1 604
+    mcg.o                      408       60       68        8
+    nokia_5110.o               780               552      552
+    printf.o                 1 280
+    start.o                  1 948
+    startup.o                  112
+    stdlib.o                    20
+    sysinit.o                  108                         12
+    uart.o                     364                24       24
+    vectors.o                   80             1 040
+    wdog.o                      48
+    ---------------------------------------------------------
+    Total:                   6 632       60    3 328    2 243
+
+command line: [2]
+    ---------------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                       4
+    low_level_init.o             4
+    ---------------------------------------------------------
+    Total:                       8
+
+rt7M_tl.a: [4]
+    ABImemclr.o                  6
+    ABImemcpy_unaligned.o      118
+    ABImemset.o                 94
+    cexit.o                     10
+    cmain.o                     26
+    cstartup_M.o                12
+    data_init.o                 40
+    zero_init3.o                34
+    ---------------------------------------------------------
+    Total:                     340
+
+shb_l.a: [5]
+    exit.o                      20
+    ---------------------------------------------------------
+    Total:                      20
+
+    Gaps                         8
+    Linker created                                16
+-------------------------------------------------------------
+    Grand Total:             7 008       60    3 344    2 243
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.bss$$Base              0x1fff3160          --   Gb  - Linker created -
+.bss$$Limit             0x1fff316f          --   Gb  - Linker created -
+.data$$Base             0x1fff2870          --   Gb  - Linker created -
+.data$$Limit            0x1fff3124          --   Gb  - Linker created -
+.data_init$$Base        0x1fff044c          --   Gb  - Linker created -
+.data_init$$Limit       0x1fff0d00          --   Gb  - Linker created -
+?main                   0x1fff2819         Code  Gb  cmain.o [4]
+ASSERT_FAILED_STR       0x1fff2554   0x4c  Data  Gb  assert.o [1]
+CodeRelocate$$Base      0x1fff27a4          --   Gb  - Linker created -
+CodeRelocate$$Limit     0x1fff27e0          --   Gb  - Linker created -
+CodeRelocateRam$$Base   0x1fff3124          --   Gb  - Linker created -
+CodeRelocateRam$$Limit  0x1fff3160          --   Gb  - Linker created -
+GPIOx                   0x1fff2870   0x14  Data  Gb  gpio.o [1]
+LCD_clear               0x1fff2193   0x2a  Code  Gb  nokia_5110.o [1]
+LCD_draw_pixel          0x1fff2271  0x120  Code  Gb  nokia_5110.o [1]
+LCD_init                0x1fff2129   0x6a  Code  Gb  nokia_5110.o [1]
+LCD_pin_config          0x1fff20e7   0x42  Code  Gb  nokia_5110.o [1]
+LCD_set_XY              0x1fff21bd   0x1c  Code  Gb  nokia_5110.o [1]
+LCD_write_byte          0x1fff221b   0x4c  Code  Gb  nokia_5110.o [1]
+LCD_write_char          0x1fff21d9   0x42  Code  Gb  nokia_5110.o [1]
+LCD_write_num           0x1fff2397   0x5a  Code  Gb  nokia_5110.o [1]
+LED_init                0x1fff25a1   0x36  Code  Gb  LED.o [1]
+Light3_turn             0x1fff2739    0xc  Code  Gb  LED_CORE.o [1]
+Light4_turn             0x1fff2745    0xc  Code  Gb  LED_CORE.o [1]
+PORTD_IRQHandler        0x1fff2671   0x86  Code  Gb  isr.o [1]
+PORTE_IRQHandler        0x1fff26f7   0x28  Code  Gb  isr.o [1]
+PORTX                   0x1fff2884   0x14  Data  Gb  gpio.o [1]
+Region$$Table$$Base     0x1fff2808          --   Gb  - Linker created -
+Region$$Table$$Limit    0x1fff2818          --   Gb  - Linker created -
+Reset_Handler           0x1fff0411         Code  Gb  crt0.o [1]
+UARTx                   0x1fff310c   0x18  Data  Gb  uart.o [1]
+__BOOT_STACK_ADDRESS {Abs}
+                        0x2000fff8          --   Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x1fff0000          --   Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x1fff0000          --   Gb  command line/config [2]
+__aeabi_memclr          0x1fff1dc5         Code  Gb  ABImemclr.o [4]
+__cmain                 0x1fff2819         Code  Gb  cmain.o [4]
+__code_start__ {Abs}    0x1fff0410          --   Gb  command line/config [2]
+__exit                  0x1fff2849   0x14  Code  Gb  exit.o [5]
+__iar_Memset_word       0x1fff24d5         Code  Gb  ABImemset.o [4]
+__iar_data_init3        0x1fff27e1   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x1fff285d         Code  Gb  cstartup_M.o [4]
+__iar_unaligned___aeabi_memcpy
+                        0x1fff1bf1         Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_unaligned___aeabi_memcpy4
+                        0x1fff1c11         Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_unaligned___aeabi_memcpy8
+                        0x1fff1c11         Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_zero_init3        0x1fff1c67   0x22  Code  Gb  zero_init3.o [4]
+__low_level_init        0x1fff2833    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x1fff0000  0x410  Data  Gb  vectors.o [1]
+_call_main              0x1fff2825         Code  Gb  cmain.o [4]
+_exit                   0x1fff283d         Code  Gb  cexit.o [4]
+_main                   0x1fff282f         Code  Gb  cmain.o [4]
+assert_failed           0x1fff2535   0x1e  Code  Gb  assert.o [1]
+bus_clk_khz             0x1fff3168    0x4  Data  Gb  sysinit.o [1]
+common_startup          0x1fff14cd   0x70  Code  Gb  startup.o [1]
+core_clk_khz            0x1fff3160    0x4  Data  Gb  sysinit.o [1]
+core_clk_mhz            0x1fff3164    0x4  Data  Gb  sysinit.o [1]
+cow                     0x1fff316c    0x1  Data  Gb  isr.o [1]
+cpu_identify            0x1fff0de9  0x194  Code  Gb  start.o [1]
+default_isr             0x1fff2755   0x1a  Code  Gb  vectors.o [1]
+delay_1us               0x1fff20e5    0x2  Code  Gb  nokia_5110.o [1]
+delayms                 0x1fff2649   0x14  Code  Gb  delay.o [1]
+disable_irq             0x1fff1ced   0x52  Code  Gb  arm_cm4.o [1]
+enable_irq              0x1fff1c8f   0x5e  Code  Gb  arm_cm4.o [1]
+exit                    0x1fff2837    0x4  Code  Gb  exit.o [3]
+exti_init               0x1fff2485   0x50  Code  Gb  exti.o [1]
+finish_flag             0x1fff2898    0x1  Data  Gb  main.o [1]
+flash_identify          0x1fff0f7d   0x66  Code  Gb  start.o [1]
+font6x8                 0x1fff2ee4  0x228  Data  Gb  nokia_5110.o [1]
+gpio_init               0x1fff23f1   0x66  Code  Gb  gpio.o [1]
+image                   0x1fff289c  0x640  Data  Gb  main.o [1]
+image_us                0x1fff2661   0x10  Code  Gb  isr.o [1]
+line                    0x1fff316e    0x1  Data  Gb  isr.o [1]
+main                    0x1fff1aa9  0x148  Code  Gb  main.o [1]
+mcg_div                 0x1fff2edc    0x8  Data  Gb  mcg.o [1]
+out_char                0x1fff2869    0x8  Code  Gb  io.o [1]
+pll_init                0x1fff1dcd  0x198  Code  Gb  mcg.o [1]
+printf                  0x1fff1a87   0x1e  Code  Gb  printf.o [1]
+printk                  0x1fff16ab  0x3dc  Code  Gb  printf.o [1]
+printk_mknumstr         0x1fff15d3   0x64  Code  Lc  printf.o [1]
+printk_pad_space        0x1fff1671   0x3a  Code  Lc  printf.o [1]
+printk_pad_zero         0x1fff1637   0x3a  Code  Lc  printf.o [1]
+printk_putc             0x1fff15a9   0x2a  Code  Lc  printf.o [1]
+row                     0x1fff316d    0x1  Data  Gb  isr.o [1]
+set_sys_dividers        0x1fff3125   0x3c  Code  Gb  mcg.o [1]
+start                   0x1fff0d01   0xe6  Code  Gb  start.o [1]
+strlen                  0x1fff20d1   0x14  Code  Gb  stdlib.o [1]
+sysinit                 0x1fff153d   0x5c  Code  Gb  sysinit.o [1]
+uart_init               0x1fff1f65  0x114  Code  Gb  uart.o [1]
+uart_putchar            0x1fff2079   0x14  Code  Gb  uart.o [1]
+water_lights            0x1fff25d7   0x6c  Code  Gb  LED.o [1]
+wdog_disable            0x1fff149d   0x14  Code  Gb  wdog.o [1]
+wdog_unlock             0x1fff14b1   0x14  Code  Gb  wdog.o [1]
+write_vtor              0x1fff1c89    0x6  Code  Gb  arm_cm4.o [1]
+
+
+[1] = H:\fire_Kinetis\build\gpio_demo\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  7 008 bytes of readonly  code memory
+     60 bytes of readwrite code memory
+  3 344 bytes of readonly  data memory
+  2 243 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+    
+    
+  <CurrentConfigs><Project>fire_adc_demo/Debug</Project><Project>Ex1/Debug</Project><Project>fire_demo/Debug</Project><Project>fire_gpio_demo/Debug</Project><Project>fire_led_demo/Debug</Project><Project>fire_uart_loop_demo/Debug</Project><Project>fire_uart_int_demo/Debug</Project><Project>fire_adc_demo/Debug</Project><Project>fire_ucos_led_demo/Debug</Project><Project>test_printf/Debug</Project><Project>fire_exti_demo/Debug</Project><Project>fire_uart_send_demo/Debug</Project><Project>fire_sd_demo/Debug</Project><Project>LQ_light/RAM</Project><Project>smart_car/Debug</Project></CurrentConfigs><CurrentProj>fire_sd_demo</CurrentProj><OverviewSelected>0</OverviewSelected></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>239</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+    <Build><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>736</ColumnWidth1><ColumnWidth2>524</ColumnWidth2><ColumnWidth3>65</ColumnWidth3></Build><TerminalIO/><Debug-Log><ColumnWidth0>23</ColumnWidth0><ColumnWidth1>1304</ColumnWidth1></Debug-Log><Select-Ambiguous-Definitions><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Select-Ambiguous-Definitions><SourceBrowser/><Find-All-References><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Find-All-References><PROJECT_GUI_CALL_GRAPH><col-names><item>File</item><item>Function</item><item>Line</item></col-names><col-widths><item>200</item><item>700</item><item>100</item></col-widths><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></PROJECT_GUI_CALL_GRAPH><Find-All-Declarations><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Find-All-Declarations></Static>
+    <Windows>
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-9831-23783</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>&lt;ws&gt;</ExpandedNode><ExpandedNode>&lt;ws&gt;/fire_adc_demo</ExpandedNode><ExpandedNode>&lt;ws&gt;/fire_adc_demo/app</ExpandedNode><ExpandedNode>&lt;ws&gt;/fire_adc_demo/drivers</ExpandedNode><ExpandedNode>&lt;ws&gt;/fire_gpio_demo</ExpandedNode><ExpandedNode>&lt;ws&gt;/fire_gpio_demo/app</ExpandedNode><ExpandedNode>Ex1</ExpandedNode><ExpandedNode>LQ_light</ExpandedNode><ExpandedNode>LQ_light/Project_Settings</ExpandedNode><ExpandedNode>LQ_light/Sources</ExpandedNode><ExpandedNode>LQ_light/Sources/C</ExpandedNode><ExpandedNode>fire_adc_demo</ExpandedNode><ExpandedNode>fire_adc_demo/app</ExpandedNode><ExpandedNode>fire_adc_demo/common</ExpandedNode><ExpandedNode>fire_adc_demo/drivers</ExpandedNode><ExpandedNode>fire_demo</ExpandedNode><ExpandedNode>fire_demo/app</ExpandedNode><ExpandedNode>fire_demo/common</ExpandedNode><ExpandedNode>fire_demo/cpu</ExpandedNode><ExpandedNode>fire_demo/drivers</ExpandedNode><ExpandedNode>fire_demo/uCOS-II</ExpandedNode><ExpandedNode>fire_exti_demo</ExpandedNode><ExpandedNode>fire_exti_demo/app</ExpandedNode><ExpandedNode>fire_exti_demo/common</ExpandedNode><ExpandedNode>fire_exti_demo/cpu</ExpandedNode><ExpandedNode>fire_exti_demo/drivers</ExpandedNode><ExpandedNode>fire_exti_demo/header</ExpandedNode><ExpandedNode>fire_gpio_demo</ExpandedNode><ExpandedNode>fire_gpio_demo/HWdrivers</ExpandedNode><ExpandedNode>fire_gpio_demo/HWdrivers/LED</ExpandedNode><ExpandedNode>fire_gpio_demo/HWdrivers/Nokia5110_LCD</ExpandedNode><ExpandedNode>fire_gpio_demo/LessChange</ExpandedNode><ExpandedNode>fire_gpio_demo/LessChange/cpu</ExpandedNode><ExpandedNode>fire_gpio_demo/LessChange/drivers</ExpandedNode><ExpandedNode>fire_gpio_demo/app</ExpandedNode><ExpandedNode>fire_gpio_demo/header</ExpandedNode><ExpandedNode>fire_led_demo</ExpandedNode><ExpandedNode>fire_led_demo/app</ExpandedNode><ExpandedNode>fire_led_demo/drivers</ExpandedNode><ExpandedNode>fire_sd_demo</ExpandedNode><ExpandedNode>fire_sd_demo/HWdrivers</ExpandedNode><ExpandedNode>fire_sd_demo/HWdrivers/LED_CORE.c</ExpandedNode><ExpandedNode>fire_sd_demo/app</ExpandedNode><ExpandedNode>fire_sd_demo/cpu</ExpandedNode><ExpandedNode>fire_sd_demo/cpu/sysinit.c</ExpandedNode><ExpandedNode>fire_sd_demo/lib</ExpandedNode><ExpandedNode>fire_sd_demo/lib/FatFs</ExpandedNode><ExpandedNode>fire_uart_int_demo</ExpandedNode><ExpandedNode>fire_uart_loop_demo</ExpandedNode><ExpandedNode>fire_uart_loop_demo/app</ExpandedNode><ExpandedNode>fire_uart_send_demo</ExpandedNode><ExpandedNode>fire_uart_send_demo/HWdriver</ExpandedNode><ExpandedNode>fire_uart_send_demo/app</ExpandedNode><ExpandedNode>fire_uart_send_demo/common</ExpandedNode><ExpandedNode>fire_uart_send_demo/cpu</ExpandedNode><ExpandedNode>fire_uart_send_demo/drivers</ExpandedNode><ExpandedNode>fire_uart_send_demo/header</ExpandedNode><ExpandedNode>fire_ucos_led_demo</ExpandedNode><ExpandedNode>fire_ucos_led_demo/app</ExpandedNode><ExpandedNode>fire_ucos_led_demo/uCOS-II</ExpandedNode><ExpandedNode>fire_ucos_led_demo/uCOS-II/App</ExpandedNode><ExpandedNode>test_printf</ExpandedNode></NodeDict></Session>
+          </Tab>
+        <Tab><Identity>TabID-30672-6774</Identity><TabName>Source Browser</TabName><Factory>SourceBrowser</Factory><Session><TypeFilter>2147483647</TypeFilter><FileFilter>1</FileFilter></Session></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3><Tabs><Tab><Identity>TabID-21520-24792</Identity><TabName>Build</TabName><Factory>Build</Factory><Session/></Tab><Tab><Identity>TabID-16237-23739</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab><Tab><Identity>TabID-5336-501</Identity><TabName>Ambiguous Definitions</TabName><Factory>Select-Ambiguous-Definitions</Factory><Session/></Tab><Tab><Identity>TabID-26680-29341</Identity><TabName>Find All References</TabName><Factory>Find-All-References</Factory><Session/></Tab><Tab><Identity>TabID-25520-10836</Identity><TabName>Find All Declarations</TabName><Factory>Find-All-Declarations</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\projects\fire_sd_demo\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>22</YPos2><SelStart2>875</SelStart2><SelEnd2>875</SelEnd2></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\drivers\uart\uart.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>262</YPos2><SelStart2>9902</SelStart2><SelEnd2>9902</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-027472b0><key>iaridepm.enu1</key></Toolbar-027472b0></Sizes></Row0><Row1><Sizes/></Row1><Row2><Sizes/></Row2></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>514</Bottom><Right>330</Right><x>-2</x><y>-2</y><xscreen>37</xscreen><yscreen>8</yscreen><sizeHorzCX>27086</sizeHorzCX><sizeHorzCY>11662</sizeHorzCY><sizeVertCX>243045</sizeVertCX><sizeVertCY>752187</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>127</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>129</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>188047</sizeHorzCY><sizeVertCX>27086</sizeVertCX><sizeVertCY>11662</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
