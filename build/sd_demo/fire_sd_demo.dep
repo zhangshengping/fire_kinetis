@@ -2,7 +2,7 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>559562383</fileChecksum>
+  <fileChecksum>2486465793</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
@@ -141,6 +141,7 @@
       <file>$PROJ_DIR$\Debug\Obj\io.pbi</file>
       <file>$PROJ_DIR$\..\..\src\common\stdlib.h</file>
       <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$PROJ_DIR$\..\..\README</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
@@ -281,6 +282,10 @@
       <inputs>
         <tool>
           <name>ICCARM</name>
+          <file> 29 86 22 121 84 34 54 88 46 97 116 81 73 50 125 56 52 53 133 0 113 89 123 120 37 111 72 76 65 47 32 58 101</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
           <file> 29 86 22 121 84 34 54 88 46 97 116 81 73 50 125 56 52 53 133 0 113 89 123 120 37 111 72 76 65 47 32 58 101</file>
         </tool>
       </inputs>
@@ -773,6 +778,10 @@
         </tool>
       </inputs>
     </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
   </configuration>
   <configuration>
     <name>Release</name>
