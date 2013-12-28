@@ -33,7 +33,12 @@ void main(void)
     printf(str);
     f_mount(&fs,0,1);
     res = f_open(&fdst,"0:/data1.txt",FA_OPEN_ALWAYS|FA_WRITE);
+    f_printf(&fdst,"hello.Working");
     f_printf(&fdst,"succed\n¹þ¹þ");
+    ;
+    ;
+    ;
+    ;
     f_close(&fdst);
     while(1)
       printf("end\n");
