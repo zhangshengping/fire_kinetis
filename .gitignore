@@ -1,0 +1,7 @@
+*.o
+*.pdi
+*.pdi.cout
+*.map
+*.hex
+*.out
+*.ini
