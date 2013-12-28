@@ -35,10 +35,6 @@ void main(void)
     res = f_open(&fdst,"0:/data1.txt",FA_OPEN_ALWAYS|FA_WRITE);
     f_printf(&fdst,"hello.Working");
     f_printf(&fdst,"succed\n¹þ¹þ");
-    ;
-    ;
-    ;
-    ;
     f_close(&fdst);
   
 
