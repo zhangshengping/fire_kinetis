@@ -1,42 +1,96 @@
-# Welcome
+#代码结构
+**************************
+##
+* **fire_kinetis**
 
-Welcome to your wiki! This is the default page we've installed for your convenience. Go ahead and edit it.
+>+ **src**
+>>- 	app
+>>- 	common
+>>- 	cpu
+>>- 	drivers
+>>- 	HWdrivers
+>>- 	Kinetis_官方Project
+>>- 	LIB
+>>- 	platforms
+>>- 	projects
+>>- 	uCOS-II
+>>- 	uCOS-III 
+>+ ***settings***
+	 
+>+ **build**
+>>- 	config files
+>+ **wiki**
+>+ **.git**
+*****************************
+********************************
+#调戏一下
+![Alt text](./饺子.jpg)
+![Alt text](./鬼火.jpg)
+![Alt text](https://drive.google.com/uc?export=view&id=0Bz3OUm_DrURoeU5ZaFZNbm5GSDg)
 
-## Wiki features
 
-This wiki uses the [Markdown](http://daringfireball.net/projects/markdown/) syntax.
-
-The wiki itself is actually a git repository, which means you can clone it, edit it locally/offline, add images or any other file type, and push it back to us. It will be live immediately.
-
-Go ahead and try:
-
+c语言代码高亮条件的范本：
 ```
-$ git clone https://zhangshengping@bitbucket.org/zhangshengping/fire_kinetis.git/wiki
+#!c
+#include <stdio.h>
+void main()
+{
+	printf("hello world")
+}
 ```
+注意```是“~”
 
-Wiki pages are normal files, with the .md extension. You can edit them locally, as well as creating new ones.
-
-## Syntax highlighting
-
-
-You can also highlight snippets of text (we use the excellent [Pygments][] library).
-
-[Pygments]: http://www.pygments.org/
+***项目工程示例2-测控主机UCOS3UCGUI398***
 
 
-Here's an example of some Python code:
-
-```
-#!python
-
-def wiki_rocks(text):
-    formatter = lambda t: "funky"+t
-    return formatter(text)
-```
-
-
-You can check out the source of this page to see how that's done, and make sure to bookmark [the vast library of Pygment lexers][lexers], we accept the 'short name' or the 'mimetype' of anything in there.
-[lexers]: http://pygments.org/docs/lexers/
-
-
-Have fun!
+项目工程示例2-测控主机UCOS3UCGUI398
++ 项目工程示例2-测控主机UCOS3UCGUI398
+>+ application
+>+ bpdriver
+>>+ ra8875
+>>+ tff
+>>+ uip
+>>>+ app
+>>>+ apps
+>>>>+ dhcpc
+>>>>+ hello-world
+>>>>+ resolv
+>>>>+ smtp
+>>>>+ telnetd
+>>>>+ webclient
+>>>>+ webserver
+>>>>>+ httpd-fs
+>>>+ doc
+>>>>+ html
+>>>+ lib
+>>>+ uip
+>>>+ unix
+>+ object
+>+ stm32lib
+>>+ inc
+>>+ m3
+>>+ src
+>+ uC-CPU
+>+ ucgui
+>>+ AntiAlias
+>>+ Config
+>>+ ConvertColor
+>>+ ConvertMono
+>>+ Core
+>>+ Font
+>>+ LCDDriver
+>>+ MemDev
+>>+ MultiLayer
+>>+ Widget
+>>+ WM
+>+ uC-LIB
+>+ ucos2
+>>+ cfg
+>>+ cpu
+>>+ GUI_X
+>>+ source
+>+ uCOS-III
+>>+ CFG
+>>+ GUI_X
+>>+ Ports
+>>+ Source
