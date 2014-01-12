@@ -24,7 +24,7 @@
 
 void main(void)
 {
-    FIL fdst,fdst2;  //文件
+    FIL fdst;  //文件
     FATFS fs;  //文件系统
     FRESULT res;
    
