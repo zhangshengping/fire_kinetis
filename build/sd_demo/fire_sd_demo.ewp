@@ -329,6 +329,7 @@
           <state>$PROJ_DIR$\..\..\src\projects\fire_sd_demo</state>
           <state>$PROJ_DIR$\..\..\build</state>
           <state>$PROJ_DIR$\..\..\src\HWdrivers\LED</state>
+          <state>$PROJ_DIR$\..\..\src\HWdrivers\Nokia5110_LCD\inc</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -2026,6 +2027,9 @@
     <name>HWdrivers</name>
     <file>
       <name>$PROJ_DIR$\..\..\src\HWdrivers\LED\LED_CORE.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\src\HWdrivers\Nokia5110_LCD\src\nokia_5110.c</name>
     </file>
   </group>
   <group>
