@@ -39,7 +39,7 @@
       
       
       
-    <Wnd1>
+    <Wnd0>
         <Tabs>
           <Tab>
             <Identity>TabID-5385-772</Identity>
@@ -51,7 +51,7 @@
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd1><Wnd2>
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd5>
         <Tabs>
           <Tab>
             <Identity>TabID-16133-776</Identity>
@@ -61,20 +61,20 @@
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd2><Wnd3><Tabs><Tab><Identity>TabID-13503-4231</Identity><TabName>Terminal I/O</TabName><Factory>TerminalIO</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd3><Wnd4><Tabs><Tab><Identity>TabID-23218-18045</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd4></Windows>
+      <SelectedTab>0</SelectedTab></Wnd5><Wnd6><Tabs><Tab><Identity>TabID-13503-4231</Identity><TabName>Terminal I/O</TabName><Factory>TerminalIO</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd6><Wnd7><Tabs><Tab><Identity>TabID-23218-18045</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd7></Windows>
     <Editor>
       
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\cpu\clk_cfg.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>173</SelStart2><SelEnd2>173</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\projects\fire_gpio_demo\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>194</YPos2><SelStart2>13895</SelStart2><SelEnd2>13895</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\projects\fire_gpio_demo\isr.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>33</YPos2><SelStart2>981</SelStart2><SelEnd2>981</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\drivers\LED\LED.C</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>492</SelStart2><SelEnd2>492</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\HWdrivers\LED\LED_CORE.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>51</YPos2><SelStart2>1833</SelStart2><SelEnd2>1858</SelEnd2></Tab><ActiveTab>4</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\drivers\sd\sd.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>382</SelStart2><SelEnd2>382</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\projects\fire_gpio_demo\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>547</SelStart2><SelEnd2>547</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\drivers\LED\LED.C</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\HWdrivers\LED\LED_CORE.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>39</YPos2><SelStart2>812</SelStart2><SelEnd2>822</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\HWdrivers\LED\LED_CORE.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>7</YPos2><SelStart2>90</SelStart2><SelEnd2>90</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\projects\fire_gpio_demo\isr.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>23</YPos2><SelStart2>716</SelStart2><SelEnd2>716</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\cpu\start.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>64</YPos2><SelStart2>2289</SelStart2><SelEnd2>2289</SelEnd2></Tab><ActiveTab>6</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-00cc2a00><key>iaridepm.enu1</key></Toolbar-00cc2a00></Sizes></Row0><Row1><Sizes><Toolbar-1b5d48e0><key>debuggergui.enu1</key></Toolbar-1b5d48e0></Sizes></Row1></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>549</Bottom><Right>296</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>199</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>290087</sizeHorzCY><sizeVertCX>218155</sizeVertCX><sizeVertCY>803207</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>549</Bottom><Right>31</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>199</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>290087</sizeHorzCY><sizeVertCX>23426</sizeVertCX><sizeVertCY>803207</sizeVertCY></Rect></Wnd2></Sizes></Row0><Row1><Sizes><Wnd3><Rect><Top>-2</Top><Left>29</Left><Bottom>549</Bottom><Right>229</Right><x>29</x><y>-2</y><xscreen>200</xscreen><yscreen>199</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>290087</sizeHorzCY><sizeVertCX>146413</sizeVertCX><sizeVertCY>803207</sizeVertCY></Rect></Wnd3></Sizes></Row1></Right><Bottom><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>68</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>70</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>102041</sizeHorzCY><sizeVertCX>146413</sizeVertCX><sizeVertCY>290087</sizeVertCY></Rect></Wnd4></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-02fe5b20><key>iaridepm.enu1</key></Toolbar-02fe5b20></Sizes></Row0><Row1><Sizes><Toolbar-0d2617d0><key>debuggergui.enu1</key></Toolbar-0d2617d0></Sizes></Row1></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>548</Bottom><Right>296</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>199</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>290511</sizeHorzCY><sizeVertCX>218155</sizeVertCX><sizeVertCY>802920</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes><Wnd5><Rect><Top>-2</Top><Left>-2</Left><Bottom>548</Bottom><Right>31</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>199</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>290511</sizeHorzCY><sizeVertCX>23426</sizeVertCX><sizeVertCY>802920</sizeVertCY></Rect></Wnd5></Sizes></Row0><Row1><Sizes><Wnd6><Rect><Top>-2</Top><Left>29</Left><Bottom>548</Bottom><Right>229</Right><x>29</x><y>-2</y><xscreen>200</xscreen><yscreen>199</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>290511</sizeHorzCY><sizeVertCX>146413</sizeVertCX><sizeVertCY>802920</sizeVertCY></Rect></Wnd6></Sizes></Row1></Right><Bottom><Row0><Sizes><Wnd7><Rect><Top>-2</Top><Left>-2</Left><Bottom>68</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>70</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>102190</sizeHorzCY><sizeVertCX>146413</sizeVertCX><sizeVertCY>290511</sizeVertCY></Rect></Wnd7></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Project>
 
