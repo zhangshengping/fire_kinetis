@@ -2053,9 +2053,6 @@
         <name>$PROJ_DIR$\..\..\src\drivers\mcg\mcg.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\..\src\drivers\sd\sd.c</name>
-      </file>
-      <file>
         <name>$PROJ_DIR$\..\..\src\drivers\uart\uart.c</name>
       </file>
       <file>

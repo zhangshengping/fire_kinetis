@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=1075513672
+Checksum=-2032541061
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -107,6 +107,10 @@ Symbiont=0
 Exclusions=
 [Breakpoints2]
 Count=0
+[Disassemble mode]
+mode=0
+[Breakpoints]
+Count=0
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -114,10 +118,6 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 1
 LogFile=_ "$PROJ_DIR$\TermIO.log"
-[Disassemble mode]
-mode=0
-[Breakpoints]
-Count=0
 [Aliases]
 A0=_ "C:\Users\zsp\Desktop\fire_Kinetis\src\common\startup.c" "H:\fire_Kinetis\src\common\startup.c"
 Count=1
